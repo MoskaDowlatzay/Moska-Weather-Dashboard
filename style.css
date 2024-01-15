@@ -54,4 +54,60 @@
     margin-top: -4px;
     background: #E3F2FD;
   }
-  
+  .weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(77,102,124);
+    transition: 0.2s ease;
+  }
+  .weather-input .search-btn:hover {
+    background: rgb(77,102,124);
+  }
+  .weather-input .location-btn {
+    background: #6C757D;
+  }
+  .weather-input .location-btn:hover {
+    background: #5c636a;
+  }
+  .weather-data {
+    width: 100%;
+  }
+  .weather-data .current-weather {
+    color: #fff;
+    background: rgb(77,102,124);
+    border-radius: 5px;
+    padding: 20px 70px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .current-weather h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+  .weather-data h6 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .current-weather .icon {
+    text-align: center;
+  }
+  .current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+  }
+  .current-weather .icon h6 {
+    margin-top: -10px;
+    text-transform: capitalize;
+  }
+  .days-forecast h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+    
