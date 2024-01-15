@@ -1,4 +1,3 @@
-$(document).ready(function () {
     const cityInput = $(".city-input");
     const searchButton = $(".search-btn");
     const currentWeatherDiv = $(".current-weather");
@@ -68,7 +67,7 @@ $(document).ready(function () {
             });
     };
 
-    const getCityCoordinates = () => {
+    const getCityCoordinate = () => {
         const cityName = cityInput.val().trim();
         if (cityName === "") return;
         const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
@@ -91,9 +90,8 @@ $(document).ready(function () {
             });
     };
 
-    searchButton.on("click", getCityCoordinates);
-    cityInput.on("keyup", e => e.key === "Enter" && getCityCoordinates());
-});
+    searchButton.on("click", getCityCoordinate);
+    cityInput.on("keyup", e => e.key === "Enter" && getCityCoordinate());
 let searchHistory = [];
 
     // Function to update the search history
@@ -146,6 +144,6 @@ let searchHistory = [];
                 console.error("Error during fetch operation:", error);
                 alert("An error occurred while fetching the coordinates!");
             });
-    };
+        };
 
 
