@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+  background-image: url("./assets/weather.jpg");
+  color: white;
+  }
+  h1 {
+    background: rgb(77,102,124);
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 18px 0;
+    color: #fff;
+  }
+  
